@@ -1,0 +1,47 @@
+﻿<Window x:Name="CircleMemberInfo" x:Class="CircleMemberList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CircleMemberList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="950" ScrollViewer.VerticalScrollBarVisibility="Disabled" MaxWidth="1000" MaxHeight="700" Icon="/icon.ico">
+    <Grid Background="#FFF3CACA" MaxWidth="950" MaxHeight="700">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="216*"/>
+            <ColumnDefinition Width="58*"/>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="44*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="5" HorizontalAlignment="Left" Height="367" Margin="68,303,0,0" VerticalAlignment="Top" Width="457" Source="/Background.PNG" Grid.ColumnSpan="5"/>
+        <ListView x:Name="CircleMemberList" Grid.ColumnSpan="5" Margin="0,55,4,10" Background="#FFF3CACA" AlternationCount="0" SelectionChanged="CircleMemberList_SelectionChanged" Grid.Column="1">
+            <ListView.View>
+                <GridView x:Name="GridMemberListView">
+                    <GridViewColumn Header="NO." Width="50" DisplayMemberBinding="{Binding Number}"/>
+                    <GridViewColumn Header="Name" Width="300" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Hierarchy" Width="150" DisplayMemberBinding="{Binding Hierarchy}"/>
+                    <GridViewColumn Header="Date" Width="128" DisplayMemberBinding="{Binding Date}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Circle Member List of Seulbi ver." HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="40" Width="436" FontSize="28" FontFamily="Times New Roman" Grid.ColumnSpan="4" Grid.Column="1"/>
+        <Label Content="Name : " HorizontalAlignment="Left" Margin="50,23,0,0" VerticalAlignment="Top" Height="40" Width="76" FontSize="20" FontFamily="Times New Roman" Grid.Column="6" RenderTransformOrigin="0.47,1.687"/>
+        <Label Content="Hierarchy : " HorizontalAlignment="Left" Margin="16,63,0,0" VerticalAlignment="Top" Height="40" Width="98" FontSize="20" FontFamily="Times New Roman" Grid.Column="6" RenderTransformOrigin="0.215,0.512"/>
+        <Label Content="Date : " HorizontalAlignment="Left" Margin="58,102,0,0" VerticalAlignment="Top" Height="40" Width="68" FontSize="20" FontFamily="Times New Roman" Grid.Column="6"/>
+        <TextBox x:Name="NameText" Grid.Column="6" HorizontalAlignment="Left" Margin="122,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="30" AutomationProperties.Name="NameText" SelectionOpacity="1" FontFamily="Times New Roman" FontSize="20" Grid.ColumnSpan="4"/>
+        <TextBox x:Name="DateText" Grid.Column="6" HorizontalAlignment="Left" Margin="122,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="30" AutomationProperties.Name="DateText" SelectionOpacity="1" FontFamily="Times New Roman" FontSize="20" Grid.ColumnSpan="4"/>
+        <Button x:Name="Add" Content="Add." Grid.Column="6" HorizontalAlignment="Left" Margin="42,152,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="Add_btn" Grid.ColumnSpan="2"/>
+        <Button x:Name="Remove" Content="Remove." Grid.Column="7" HorizontalAlignment="Left" Margin="29,152,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="Remove_btn" Grid.ColumnSpan="3"/>
+        <Button x:Name="MoveUp" Content="Move Up." Grid.Column="6" HorizontalAlignment="Left" Margin="42,203,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="MoveUp_btn" Grid.ColumnSpan="2"/>
+        <Button x:Name="MoveDown" Content="Move Down." Grid.Column="7" HorizontalAlignment="Left" Margin="29,203,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="MoveDown_btn" Grid.ColumnSpan="3"/>
+        <Button x:Name="ReadTxt" Content="Read." Grid.Column="6" HorizontalAlignment="Left" Margin="42,255,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="ReadTxt_btn" Grid.ColumnSpan="2"/>
+        <Button x:Name="OutputTxt" Content="Output." Grid.Column="7" HorizontalAlignment="Left" Margin="29,257,0,0" VerticalAlignment="Top" Width="114" Height="39" FontFamily="Times New Roman" FontSize="20" Click="OutputTxt_btn" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="HierarchyComboBox" Grid.Column="6" HorizontalAlignment="Left" Margin="122,69,0,0" VerticalAlignment="Top" Width="164" FontFamily="Times New Roman" Grid.ColumnSpan="4" RenderTransformOrigin="1.111,-3.396" Height="28" FontSize="20"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Background.PNG" />
+    <None Remove="DLG_UNIT_SELECT_IMG_GUST_USER_CASTER.PNG" />
+    <None Remove="HQ_SKILL_SCEN_BG_BIG_GUST_USER_CASTER_MIDSUMMER_MELODY_D.PNG" />
+    <None Remove="icon.ico" />
+    <None Remove="Icon1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background.PNG" />
+    <Resource Include="icon.ico" />
+    <Resource Include="Icon1.ico" />
+  </ItemGroup>
+
+</Project>

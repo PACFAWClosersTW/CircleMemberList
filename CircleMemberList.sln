@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleMemberList", "CircleMemberList\CircleMemberList.csproj", "{581A9FED-E24F-4AB6-8613-6276CAAE341C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{581A9FED-E24F-4AB6-8613-6276CAAE341C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581A9FED-E24F-4AB6-8613-6276CAAE341C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581A9FED-E24F-4AB6-8613-6276CAAE341C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581A9FED-E24F-4AB6-8613-6276CAAE341C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DB9898E-DE0C-4847-85B8-8A93BC263B10}
+	EndGlobalSection
+EndGlobal
